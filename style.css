@@ -1,0 +1,74 @@
+body
+{
+       background: -moz-linear-gradient(-45deg, rgba(249,247,247,0.69) 0%, rgba(181,181,181,0.73) 14%, rgba(177,179,249,0.81) 38%, rgba(39,49,244,0.93) 77%, rgba(31,47,119,1) 100%); /* FF3.6-15 */
+       background: -webkit-linear-gradient(-45deg, rgba(249,247,247,0.69) 0%,rgba(181,181,181,0.73) 14%,rgba(177,179,249,0.81) 38%,rgba(39,49,244,0.93) 77%,rgba(31,47,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+       background: linear-gradient(135deg, rgba(249,247,247,0.69) 0%,rgba(181,181,181,0.73) 14%,rgba(177,179,249,0.81) 38%,rgba(39,49,244,0.93) 77%,rgba(31,47,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0f9f7f7', endColorstr='#1f2f77',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.ferrets_webpage li
+{
+       font-style: italic;
+}
+.ferrets_webpage h1 
+{
+	 font-family: "Arial";
+         color: black;
+	
+}
+.ferrets_webpage h1, h2
+{
+       display: inline-block; 
+}
+.ferrets_webpage h1, h2, h3
+{
+        margin: 0px;
+}
+
+.ferrets_webpage .standard-paragraph
+{
+         font-family: "calibri";
+         font-size: 18px;
+         color: #000000;
+         width: 800px; 
+         margin-top: 10px;
+         margin-bottom: 10px;       
+}
+.ferrets_webpage .ferret
+{
+      display: table;
+      font-size: 19px;
+      border: 2px solid blue;
+      margin-left: 20px;
+      margin-bottom; 20px;
+}
+
+.ferrets_webpage .name, .type, .supplies
+{
+      display: inline-block;
+      font-family: "calibri";
+      font-size: 18px;
+}
+
+.ferrets_webpage .name
+{
+      width: 140px;
+      border-right: 2px solid blue;
+}
+
+.ferrets_webpage .ferrets-playing-images
+{
+         width: 300px;
+         height: 200px;
+         border: 3px solid white;
+         background-image: url("images/Ferrets-playing.gif");
+         background-size: 300px 200px;
+         display: inline-block;
+         vertical-align: middle;
+}
+.ferrets_webpage .ferrets-playing-caption
+{
+         display: inline-block;
+         vertical-align: middle;
+         width: 480px;
+}
