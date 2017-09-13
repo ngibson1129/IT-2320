@@ -9,12 +9,24 @@ body
 .ferrets_webpage li
 {
        font-style: italic;
+       width: 200pix;
 }
+
+.ferrets_webpage .list-item-highlight
+{
+       font-weight: bold;
+       color: yellow;
+}
+
+.ferrets_webpage .footer
+{   
+       font-family: "Calibri";
+}
+
 .ferrets_webpage h1 
 {
 	 font-family: "Arial";
-         color: black;
-	
+         color: black;	
 }
 .ferrets_webpage h1, h2
 {
@@ -60,6 +72,16 @@ body
 {
          width: 300px;
          height: 200px;
+         border: 3px solid blue;
+         background-image: url("images/Ferrets-playing.gif");
+         background-size: 300px 200px;
+         display: inline-block;
+         vertical-align: middle;
+}
+.ferrets_webpage .ferrets-playing-images-highlight
+{
+         width: 300px;
+         height: 200px;
          border: 3px solid white;
          background-image: url("images/Ferrets-playing.gif");
          background-size: 300px 200px;
@@ -72,3 +94,4 @@ body
          vertical-align: middle;
          width: 480px;
 }
+
