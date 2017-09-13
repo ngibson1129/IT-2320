@@ -6,6 +6,9 @@
 	</HEAD>
 
 	<BODY>
+
+                <script src="scripts.js"> </script>                
+
                 <div class="ferrets_webpage"> 
 
 		<h1>What it is like owning a ferret</h1>
@@ -25,7 +28,7 @@
                         got her. 
 		</div>
   
-                <div class="ferrets-playing-images"></div>
+                <div class="ferrets-playing-images" onclick= "ToggleHighlight()"></div>
 
                 <div class="standard-paragraph">
 	               As I mentioned before I got my first ferret, I did a lot of research.  Using the internet 
@@ -77,10 +80,12 @@
                     Ferrets are carnivores and need to be on a protien based diet. They have four types of teeth, the number includes maxillary (upper) and mandibular (lower teeth): 
 
                  <ul>
-                 <li>Twelve small teeth (only a couple of millimeters) located between the canines in the front of the mouth. These are known as the incisors and are used for grooming.</li>  
-                 <li>Four canines used for killing prey.</li>  
-                 <li>Twelve premolar teeth that the ferret uses to chew food-located at the sides of the mouth, directly behind the canines.  The ferret uses these teeth to cut through flesh, using them in a scissors action to cut the meat into digestible chunks.</li>  
-                 <li>Six molars,two on top and four on the bottom, at the far back of the mouth are used to crush food.</li>
+                 <li onmouseover="MouseOver(this)" onmouseout="MouseOut(this)">Twelve small teeth (only a couple of millimeters) located between the canines in the front of the mouth. These are known as the incisors and are used for grooming.</li>  
+                 <li onmouseover="MouseOver(this)" onmouseout="MouseOut(this)">Four canines used for killing prey.</li>  
+                 <li onmouseover="MouseOver(this)" onmouseout="MouseOut(this)">Twelve premolar teeth that the ferret uses to chew food-located at the sides of the mouth, directly behind the canines.  The ferret uses these teeth to cut through flesh, using them in a scissors action to cut the meat into digestible chunks.</li>  
+                 <li onmouseover="MouseOver(this)" onmouseout="MouseOut(this)">Six molars,two on top and four on the bottom, at the far back of the mouth are used to crush food.</li>
+                 </ul>
+                
                 </div>
 
                 <div class="standard-paragraph">
@@ -97,8 +102,10 @@
 			<a href="https://www.lovethatpet.com/small-pets/ferrets/ferret-care/">lovethatpet.com</a>
 			to check out some facts and how to care for ferrets!
 		</div>
-              
 
+                 <input type="text" onchange="TextInputChanged(this)"/>
+                 <div class="footer">Please Don't Forget to Sign The Guestbook!</div>
+                 
                 </div>
 	</BODY>
 
