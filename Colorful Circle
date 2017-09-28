@@ -1,0 +1,21 @@
+<HTML>
+
+
+ <HEAD>
+		
+                     
+      <link rel= "stylesheet" type= "text/css" href= "styles.css" />
+	
+  </HEAD>
+
+	
+       <BODY>
+
+                
+           <h2>Colorful Circles</h2>
+           <div id="circle"></div>
+           <script src="script.js"> </script>             
+
+        </BODY>
+
+</HTML>
