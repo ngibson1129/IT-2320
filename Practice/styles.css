@@ -1,0 +1,76 @@
+.cell
+{
+	background-color: white;
+}
+
+.spreadsheet .row .name, .spreadsheet .row .last-name
+{
+	background-color: white;
+	display: inline-block;
+	border: 2px solid orange;
+	width: 80px;
+        margin-left: 175px;
+        margin-top: 20px;
+        margin-bottom; 100px;
+}
+.spreadsheet .row2 .name, .spreadsheet .row2 .last-name
+{
+	background-color: white;
+	display: inline-block;
+	border: 2px solid green;
+	width: 115px;
+        margin-left: 40px;
+        margin-bottom; 90px;
+}
+.spreadsheet .row .name3
+{
+	background-color: white;
+	border: 1px solid purple;
+	width: 115px;
+        margin-left: 40px;
+        margin-bottom; 300px;
+}
+.column
+{
+	background-color: white;
+}
+
+.spreadsheet .column-name2, .spreadsheet .column-last-name2
+{
+	background-color: white;
+        font-weight: bold;
+	display: inline-block;
+	border: 3px solid grey;
+	width: 80px;
+        margin-left: 175px;
+        margin-bottom; 90px;
+}
+.spreadsheet .column-name
+{
+	background-color: white;
+	display: inline-block;
+	border: 4px solid blue;
+	width: 90px;
+        margin-left: 300px;
+        margin-bottom; 90px;
+}
+.spreadsheet .column-name3
+{
+	background-color: white;
+	display: inline-block;
+	border: 4px solid blue;
+	width: 90px;
+        margin-left: 300px;
+        margin-top: 30px;
+        margin-bottom; 0px;
+}
+.spreadsheet .column-name4
+{
+	background-color: white;
+	display: inline-block;
+	border: 4px solid blue;
+	width: 90px;
+        margin-left: 55px;
+        margin-top: 20px;
+        margin-bottom; 90px;
+}
