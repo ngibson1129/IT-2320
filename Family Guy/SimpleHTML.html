@@ -1,0 +1,44 @@
+<html>
+
+	<body>
+
+		<p>demonstrated understanding of JavaScript class definitions, instantiating
+                   objects, and invoking prototype functions</p>
+
+		<p id="demo"></p>
+
+
+	<script>
+
+//This is person class 
+	function person(firstName,lastName,age)
+	{
+
+		this.firstName = firstName,
+		this.lastName = lastName,
+		this.age = age,
+
+  
+		this.fullName = function() 
+		{
+
+			return this.firstName + " " + this.lastName + " " + this.age;
+
+		}
+
+  
+
+	}
+
+//Creating object of person class with constructor
+
+	var p = new person("Peter","Griffth",41);
+
+//invoking prototype functions
+
+	document.getElementById("demo").innerHTML = p.fullName();
+
+	</script>
+	
+	</body>
+</html>
