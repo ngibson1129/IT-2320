@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+ 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=ISO-8859-1"
+        http-equiv="content-type">
+    <script type="application/javascript">
+        var centreX = 100; var centreY = 100;
+        var radius = 100;
+        var rotateAngle = 36 * Math.PI / 90;
+        var startAngle = 0 * Math.PI / 90;
+        var endAngle = 36 * Math.PI / 90;
+        var counter = 0;
+        var animFlag;
+        var colours = ["teal", "red", "green", "blue", "orange"];
+ 
+        function init() {
+            var canvas = document.getElementById("canvas");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+                drawWheel();
+            }
+        }
+ 
+        function drawWheel() {
+            var canvas = document.getElementById("canvas");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+                for (i = 0; i < 5; i++) {
+                    ctx.fillStyle = colours[i];
+                    ctx.translate(centreX, centreY);
+                    ctx.rotate(rotateAngle);
+                    ctx.translate(-centreX, -centreY);
+                    ctx.beginPath();
+                    ctx.moveTo(centreX, centreY);
+                    ctx.lineTo(centreX + radius, centreY);
+                    ctx.arc(centreX, centreY, radius, startAngle, endAngle, false);
+                    ctx.closePath();
+                    ctx.fill();
+                }
+            }
+        }
+ 
+        function rotateWheel(rnd) {
+            var canvas = document.getElementById("canvas");
+            if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+                ctx.translate(centreX, centreY);
+                ctx.rotate(rotateAngle);
+                ctx.translate(-centreX, -centreY);
+                drawWheel();
+                counter++;
+                if (counter > rnd) {
+                    counter = 0;
+                    clearInterval(animFlag);
+                }
+            }
+        }
+ 
+        var vel = 2000;
+var degs = 0;
+var cat = document.querySelector("img");
+function repeat(){
+  if(vel == 1000){
+    cat.classList.add("hover");
+    console.log("hover")
+  }else{
+    cat.classList.remove("hover");
+    console.log("nohover")
+  }
+  degs+=360;
+  cat.style.transform = "rotate("+degs+"deg)";
+  setTimeout(repeat, vel);
+}
+repeat();
+document.querySelector("img").addEventListener("mouseenter",hovering);
+function hovering(){
+  vel = 1000;
+}
+document.querySelector("img").addEventListener("mouseleave",nohovering);
+function nohovering(){
+  vel = 2000;
+}
+        window.addEventListener("click", mouseClick, false);
+ 
+    </script>
+    <title>Spinning Color Wheel</title>
+</head>
+<body onload="init();">
+    <canvas id="canvas" width="600" height="500"></canvas>
+    <br>
+</body>
+</html>
